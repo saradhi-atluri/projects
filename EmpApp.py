@@ -28,7 +28,7 @@ def home():
 
 @app.route("/about", methods=['POST'])
 def about():
-    return render_template('www.intellipaat.com')
+    return render_template('www.saradhiatluri.ga')
 
 
 @app.route("/addemp", methods=['POST'])
@@ -43,8 +43,8 @@ def AddEmp():
     insert_sql = "INSERT INTO employee VALUES (%s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
 
-    if emp_image_file.filename == "":
-        return "Please select a file"
+    #if emp_image_file.filename == "":
+        #return "Please select a file"
 
     try:
 
